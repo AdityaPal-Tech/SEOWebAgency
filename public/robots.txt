@@ -1,0 +1,36 @@
+# SEOWebAgency – SEO & Digital Growth Agency
+# https://seowebagency.in
+
+User-agent: *
+Allow: /
+Allow: /api/inquiry
+Disallow: /api/
+Disallow: /_next/
+Disallow: /.next/
+
+# Allow Google to crawl everything
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+# Allow Googlebot Images
+User-agent: Googlebot-Image
+Allow: /
+
+# Allow Googlebot News
+User-agent: Googlebot-News
+Allow: /
+
+# Allow Googlebot Video
+User-agent: Googlebot-Video
+Allow: /
+
+# Crawl budget optimization
+User-agent: *
+Crawl-delay: 5
+
+# Sitemaps
+Sitemap: https://seowebagency.in/sitemap.xml
+
+# Host directive
+Host: https://seowebagency.in
