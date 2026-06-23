@@ -13,6 +13,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Viewport } from "next";
 
 export const viewport: Viewport = {
@@ -43,7 +44,7 @@ export const metadata: Metadata = {
   publisher: "SEOWebAgency",
   metadataBase: new URL("https://seowebagency.in"),
   verification: {
-    google: "googlef64609e21dbcee45",
+    google: "6-XbpH24HQ7bKACaHTZ-PkcKnFnzNlCO2RO_kGXcGC8",
   },
   alternates: {
     canonical: "https://seowebagency.in",
@@ -353,6 +354,7 @@ export default function RootLayout({
       </head>
       <body className="min-h-full flex flex-col bg-[#ffffff] dark:bg-[#030303] text-zinc-950 dark:text-zinc-50 selection:bg-indigo-500/30 selection:text-indigo-900 dark:selection:text-indigo-200">
         {children}
+        <SpeedInsights />
       </body>
     </html>
   );

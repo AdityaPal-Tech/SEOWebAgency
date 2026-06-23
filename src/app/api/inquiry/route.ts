@@ -106,7 +106,7 @@ export async function POST(request: Request) {
     }
 
     // 5. Send payload to Formspree endpoint
-    const formspreeUrl = process.env.FORMSPREE_URL || "https://formspree.io/f/mgobbpqz";
+    const formspreeUrl = process.env.FORMSPREE_URL || "https://formspree.io/f/mbdvlray";
 
     try {
       console.log(`[Formspree] Forwarding inquiry ${inquiryId} to ${formspreeUrl}`);
